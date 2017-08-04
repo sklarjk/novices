@@ -2,27 +2,9 @@
 <mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <docinfo>
 
-<rename element="observation" lang="en-US">Recall</rename>
-<rename element="insight" lang="en-US">Terminology</rename>
 
-<macros>
+<!--<macros>
 
-\def\Z{\mathbb{Z}}
-\def\zn{\mathbb{Z}_n}
-\def\znc{\mathbb{Z}_n^\times}
-\def\R{\mathbb{R}}
-\def\Q{\mathbb{Q}}
-\def\C{\mathbb{C}}
-\def\N{\mathbb{N}}
-\def\M{\mathbb{M}}
-\def\G{\mathcal{G}}
-\def\0{\mathbf 0}
-\def\Gdot{\langle G, \cdot\,\rangle}
-\def\phibar{\overline{\phi}}
-\DeclareMathOperator{\lcm}{lcm}
-\DeclareMathOperator{\Ker}{Ker}
-\def\siml{\sim_L}
-\def\simr{\sim_R}
 </macros>
 
 <latex-image-preamble>
@@ -39,7 +21,7 @@
 \usepackage[all]{xy}
 \usepackage{pgfplots}
 
-</latex-image-preamble>
+</latex-image-preamble>-->
 
 </docinfo>
 
