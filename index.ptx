@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+
+<rename element="observation" lang="en-US">Recall</rename>
+<rename element="insight" lang="en-US">Terminology</rename>
+
+<macros>
+
+\def\Z{\mathbb{Z}}
+\def\zn{\mathbb{Z}_n}
+\def\znc{\mathbb{Z}_n^\times}
+\def\R{\mathbb{R}}
+\def\Q{\mathbb{Q}}
+\def\C{\mathbb{C}}
+\def\N{\mathbb{N}}
+\def\M{\mathbb{M}}
+\def\G{\mathcal{G}}
+\def\0{\mathbf 0}
+\def\Gdot{\langle G, \cdot\,\rangle}
+\def\phibar{\overline{\phi}}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\Ker}{Ker}
+\def\siml{\sim_L}
+\def\simr{\sim_R}
+</macros>
+
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+
+\usepackage[all]{xy}
+\usepackage{pgfplots}
+
+</latex-image-preamble>
+
+</docinfo>
+
+
+<article>
+<title>PreTeXt for Novices</title>
+<!--<subtitle>A Structural Approach</subtitle>-->
+
+<frontmatter>
+<titlepage>
+<author>
+<personname>Jessica K. Sklar</personname>
+<department>Department of Mathematics</department>
+<institution>Pacific Lutheran University</institution><email>sklarjk@plu.edu</email>
+</author>
+
+
+</titlepage>
+
+<colophon>
+
+		<edition>First Edition</edition>
+
+		<!--<website>
+			<name><c>url</c></name>
+			<address>url</address>
+		</website>-->
+
+		<copyright>
+			<year>2017</year>
+			<holder>Jessica K. Sklar</holder>
+			<minilicense>GFDL License</minilicense>
+			<shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q></shortlicense>
+		</copyright>
+
+	</colophon>
+
+	<!-- Accepted order: acknowledgements, forewords, prefaces -->
+
+<!--<acknowledgement>
+
+<p>Thank you to Jennifer Nordstrom of Linfield College for introducing me to the <url href="http://mathbook.pugetsound.edu">PreTeXt</url> authoring system; to Rob Beezer at the University of Puget Sound for facilitating my entry into the PreTeXt world;  to David Farmer at the <url href="https://aimath.org/textbooks/"> Open Textbook Initiative</url> for typesetting the initial draft of this book in PreTeXt; and to Rob, David, Mitch Keller, Alex Jordan, and Alex Best and everyone else on the  for their extensive technical help via the PreTeXt support group.</p>
+</acknowledgement>-->
+
+
+  <preface>
+
+</preface>
+</frontmatter>
+
+<section>
+<title>Installing software</title>
+
+<p>Here we provide a list of the steps you will need to take to get PreTeXt up and running on your local machine.  First, in any order:
+
+<ol>
+<li><p>If you don't already have one you like to use, install a text editor that will produce <q>unformatted</q> text.</p>
+<p> If you don't know what that means, or don't
+already have such an editor that you like to use, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/">https://www.sublimetext.com</url>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
+
+<p><em>Why?</em> You will write your PTX source documents using this editor. (For more information on text editors with respect to PreTeXt, see <xref ref="authorguide"/>.)</p>
+<p><em>installation difficulty level:</em> Easy.</p>
+
+</li>
+
+<li><p>Install Git by choosing the appropriate option at <url href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</url>.</p>
+
+
+
+<p><em>Why?</em> From the Introduction in <xref ref="gitforauthors"/>: <q>Git <m>\ldots</m> is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.</q></p><p>For more details on why you'll be using Git (and how to use it!), see <xref ref="gitforauthors"/>. But one thing to note is that 
+<alert>if you are using Windows, you will perform all of your compilations in the Git Bash shell.</alert></p>
+<p>Request for help: What's the corresponding info for Linux/Mac users?</p>
+
+
+<p><em>Instillation difficulty level:</em> Easy.</p></li>
+
+<li><p>Sign up for a GitHub account at <url href="https://github.com">https://github.com/</url>.</p>
+
+<p><em>Why?</em> GitHub is a code hosting platform. We will later elaborate on how we will use GitHub.</p>
+<p><em>installation difficulty level:</em> Easy.</p>
+</li>
+
+<li><p>Install <c>xsltproc</c>.</p>
+
+<p>We highly recommend doing this installation as described in the great <em>Getting Started</em> videos at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos">http://mathbook.pugetsound.edu/documentation.html#getting-started-videos</url> created by Karl-Dieter Crisman.</p>
+
+<p><em>Why?</em> <c>xsltproc</c> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed. </p>
+<p><em>Installation difficulty level:</em> Varies.</p>
+
+</li>
+
+</ol>
+</p>
+</section>
+
+<section><title>Creating and maintaining the <c>mathbook</c> repository on your local machine</title>
+
+<introduction><p>
+Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is essentially a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't <q>need</q> (e.g., the library of examples), but some you do (e.g., the files <c>mathbook-html.xsl</c> and <c>mathbook-latex.xsl</c>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p></introduction>
+
+<subsection><title>Cloning the <c>mathbook</c> repository</title></subsection>
+<p>In your Git Bash shell, enter in the following commands, one at a time:</p>
+
+<p><tabular>
+  <row>
+  <cell><c>git clone https://github.com/rbeezer/mathbook.git</c></cell>
+</row>
+<row><cell>
+<c>cd mathbook</c></cell></row>
+<row><cell>
+  <c>git checkout dev</c></cell>
+</row>
+</tabular></p>
+
+<p>This will install a folder called <c>mathbook</c> on your local machine that contains the necessary (and optional) files.  <alert>Do not move this folder or its contents.</alert> </p>
+
+<subsection><title>Keeping the <c>mathbook</c> repository on your local machine up to date</title></subsection>
+<p>Whenever the developers make changes to the files in the GitHub repository <c>mathbook</c>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <c>mathbook</c> folder and entering the command <c>pull git</c>.</p>
+
+<p>Again, need help: Is there an equivalent of the Git Bash shell for Mac users? Linux?</p>
+
+</section>
+
+
+
+<!--<xi:include href="./isothms.ptx" />-->
+
+<backmatter>
+
+<!-- <appendix>
+        <title>Notation</title>
+
+        <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
+
+        <notation-list />
+    </appendix>
+
+	 <appendix>
+        <title>Solutions to Exercises</title>
+        <solution-list />
+    </appendix>
+
+    <index-part>
+
+        <index-list />
+    </index-part>
+
+<xi:include href="./bibliography.ptx" />
+-->
+<references>
+<title>Bibliography</title>
+<biblio type="raw" xml:id="gitforauthors">Rob A. Beezer and David Farmer, <title>Git for Authors</title>. Published under the GNU Free
+Documentation License, 2016. 
+<url href="https://mathbook.pugetsound.edu/gfa/html/">https://mathbook.pugetsound.edu/gfa/html/</url>
+</biblio>
+<biblio type="raw" xml:id="authorguide">Rob A. Beezer, <title>MathBook XML Author's Guide</title>. Published under the GNU Free
+Documentation License, 2013 (revised 2017). 
+<url href="http://mathbook.pugetsound.edu/doc/author-guide/html">http://mathbook.pugetsound.edu/doc/author-guide/mathbook-author-guide.html</url>
+</biblio>
+</references>
+<xi:include href="./gfdl-mathbook.xml" />  <!-- GFDL License text -->
+ 
+    <colophon>
+        <p>This tutorial was authored in <url href="http://mathbook.pugetsound.edu">PreTeXt</url>.</p>
+    </colophon>
+
+
+
+</backmatter>
+</article>
+</mathbook>
