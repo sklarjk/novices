@@ -1,0 +1,56 @@
+<chapter>
+<title>Installing software</title>
+
+<p>Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  First, in any order:
+</p>
+<p>
+<ol>
+<li><p>Installing a text editor</p>
+<p>
+	If you don't already have one you like to use, install a text editor that will produce <q>unformatted</q> text.</p>
+<p> If you don't know what that means, or don't
+already have such an editor that you like to use, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/"/>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
+
+<p><em>Why this installation?</em> You will write your PTX source documents using this editor. (For more information on text editors with respect to PTX, see <xref ref="authorguide"/>.)</p>
+<p><em>Installation difficulty level:</em> Easy.</p>
+
+</li>
+
+<li><p>Installing Git and creating a shortcut to the Git Bash shell</p>
+<p>
+
+	<ol><li><p>Install Git by choosing the Windows option at <url href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"/> and selecting the default options. </p>
+
+<p><em>Why this installation?</em> From the Introduction in <xref ref="gitforauthors"/>: <q>Git <m>\ldots</m> is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.</q></p><p>For more details on why you'll be using Git (and how to use it!), see <xref ref="gitforauthors"/>.</p></li>
+<li>
+<p>
+	 Create a shortcut to the file <c>git-bash.exe</c>.</p>
+<p>
+<em>Why this shortcut creation?</em> <alert>You will perform all of your compilations in the Git Bash shell</alert>, which is installed when you install Git.  You don't need to know what it is, exactly, other than that it is a command-line interface in which you'll enter your commands. If you've used Unix or Linux, you're in your wheelhouse in the Git Bash shell.  If you haven't, don't worry; we'll cover the basics of what you need to know.</p></li></ol></p>
+
+<p></p>
+<p><em>Instillation and shortcut creation difficulty level:</em> Easy.</p></li>
+
+<li><p>Sign up for a GitHub account at <url href="https://github.com"/>.</p>
+
+<p><em>Why sign up for this account?</em> GitHub is a code hosting platform. We will later elaborate on how we will use GitHub.</p>
+<p><em>Sign-up  difficulty level:</em> Easy.</p>
+</li>
+
+<li><p>Install <c>xsltproc</c>.</p>
+
+<p>Follow the installation instructions for <c>xsltproc</c> <alert>exactly</alert> as described in the Karl-Dieter Crisman's Windows <em>Getting Started</em> video found at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos"/>. 
+
+<p>The installation files are at <url href="https://www.zlatkovic.com/libxml.en.html"/> and the discussion of the installation of <c>xsltproc</c> begins in the video at 3:31. We elaborate on some of the video instructions below.</p> 
+
+<p>
+<alert>It is essential that you install the <c>xsltproc</c> files in your default Git Bash directory in order for you to avoid making adjustments to later commands.</alert>
+</p>
+
+<p>To find what that directory is, open the Git Bash shell using the shortcut on your desktop, and enter <c>pwd</c>.  This will likely yield <c>c/users/username</c>, where <c>username</c> is the profile under which you're logged into your Windows machine. In any case, <alert>this is your default Git Bash directory</alert>. You will need to move all the files you extract, as per the video instructions, into this directory.</p>
+
+<p><em>Why this installation?</em> <c>xsltproc</c> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed. </p> 
+
+<p><alert>Do not move the <c>xsltproc</c> folder or its contents from their initial locations.</alert> </p>
+<p><em>Installation difficulty level:</em> Moderate. Carefully follow the video instructions.</p></p></li></ol></p>
+</chapter>
