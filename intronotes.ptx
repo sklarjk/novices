@@ -1,0 +1,20 @@
+<chapter><title>Important introductory notes</title>
+
+  <p>This tutorial will help novice PTX users install necessary software on their Windows machine and learn the basics of compiling PTX files into HTML and PDF forms. It will be important to keep the following in mind throughout.
+  
+  <ul>
+  	<li>
+   <p>Much of the documentation about PreTeXt (PTX) will refer to it by its previous name, MathBook XML (XML), and many of the example PTX documents found in the <c>mathbook</c> repo (you'll learn what that is in <xref ref="repos"/>) will have XML extensions.  <q>XML</q> is being slowly being migrated to <q>PTX</q> in the documentation, but it may take a while since the documentation is extensive!  You can replace, in your mind, XML with PTX anytime it appears.</p></li>
+
+   <li><p>You're encouraged to join the Google group <c>pretext-support</c>: <url href=
+  "https://groups.google.com/forum/?fromgroups#!forum/pretext-support" />. When you run into trouble or have questions, you can post in the group; you can also search the group for possible posts addressing your questions.</p></li>
+
+<li>
+   <p>Corrections, comments, suggestions, and edits are encouraged! 
+    If you are a novice, please send feedback to Jessica at <email>sklarjk@plu.edu</email> or post  in the  <url href=
+  "https://groups.google.com/forum/?fromgroups#!forum/pretext-support" ><c>pretext-support</c></url> group. More seasoned users: the source materials for this document reside in the GitHub <url href="https://github.com/sklarjk/novices"><c>sklarjk/novices</c></url> repo.  Feel free to create a new issue on the repo, or initiate a pull request with proposed edits.</p>
+</li>
+</ul>
+</p>
+
+</chapter>

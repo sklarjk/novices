@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-05T00:06:00-07:00    *-->
+<!--*    on 2017-08-05T11:13:22-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -56,23 +56,21 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar" style=""><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-4.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-4.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-2.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-5.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="chapter-5.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-2.html" title="Next" alt="Next">Next</a></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-4.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-4.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-2.html" title="Next" alt="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-5.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="chapter-5.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-2.html" title="Next" alt="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
 <nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
-<ul>
-<li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li>
-<li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li>
-</ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Installing software</span></a></h2>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Cloning nd maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
-<h2 class="link"><a href="chapter-3.html" data-scroll="chapter-3"><span class="codenumber">3</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
-<h2 class="link active"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
+<ul><li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li></ul>
+<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Installing software</span></a></h2>
+<h2 class="link"><a href="repos.html" data-scroll="repos"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
+<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
+<h2 class="link active"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
 <ul>
 <li><a href="section-1.html" data-scroll="section-1" class="active">Compiling to HTML</a></li>
 <li><a href="section-2.html" data-scroll="section-2">Compiling to PDF</a></li>
@@ -83,20 +81,20 @@ MathJax.Hub.Config({
 <li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colophon</a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-1"><header title="Section 4.1 Compiling to HTML"><h1 class="heading hide-type" alt="Section 4.1 Compiling to HTML">
-<span class="type">Section</span><span class="codenumber">4.1</span><span class="title">Compiling to HTML</span>
-</h1></header><p id="p-39">From the folder containing the PTX file, type <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</tt>. This will compile the PTX into an HTML file <tt class="code-inline tex2jax_ignore">hello-world.html</tt> in the same folder as <tt class="code-inline tex2jax_ignore">hello-world.xml</tt>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
-<p id="p-40">What was all that stuff in the compilation command?? </p>
-<ul id="ul-1" style="list-style-type: disc;">
-<li id="li-9"><p id="p-41"><tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc</tt> ran the <tt class="code-inline tex2jax_ignore">xsltproc</tt> executable, living within the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder.</p></li>
-<li id="li-10"><p id="p-42"><tt class="code-inline tex2jax_ignore">--xinclude</tt> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
-<li id="li-11"><p id="p-43"><tt class="code-inline tex2jax_ignore">~/mathbook/xsl/mathbook-html.xsl</tt> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
-<li id="li-12"><p id="p-44">Finally, <tt class="code-inline tex2jax_ignore">hello-world.xml</tt> is the name of the PTX file you're compiling!</p></li>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-1"><header title="Section 5.1 Compiling to HTML"><h1 class="heading hide-type" alt="Section 5.1 Compiling to HTML">
+<span class="type">Section</span><span class="codenumber">5.1</span><span class="title">Compiling to HTML</span>
+</h1></header><p id="p-42">From the folder containing the PTX file, type <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</tt>. This will compile the PTX into an HTML file <tt class="code-inline tex2jax_ignore">hello-world.html</tt> in the same folder as <tt class="code-inline tex2jax_ignore">hello-world.xml</tt>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
+<p id="p-43">What was all that stuff in the compilation command?? </p>
+<ul id="ul-2" style="list-style-type: disc;">
+<li id="li-12"><p id="p-44"><tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc</tt> ran the <tt class="code-inline tex2jax_ignore">xsltproc</tt> executable, living within the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder.</p></li>
+<li id="li-13"><p id="p-45"><tt class="code-inline tex2jax_ignore">--xinclude</tt> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
+<li id="li-14"><p id="p-46"><tt class="code-inline tex2jax_ignore">~/mathbook/xsl/mathbook-html.xsl</tt> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
+<li id="li-15"><p id="p-47">Finally, <tt class="code-inline tex2jax_ignore">hello-world.xml</tt> is the name of the PTX file you're compiling!</p></li>
 </ul>
-<p id="p-45"><article class="remark-like" id="note-1"><h5 class="heading">
-<span class="type">Note</span><span class="codenumber">4.1.1</span>
+<p id="p-48"><article class="remark-like" id="note-1"><h5 class="heading">
+<span class="type">Note</span><span class="codenumber">5.1.1</span>
 </h5>
-<p id="p-46">If you don't move your <tt class="code-inline tex2jax_ignore">mathbook</tt> or <tt class="code-inline tex2jax_ignore">xsltproc</tt> folders or their contents on your local machine, you can always start off your compilation command with <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</tt> and simply appending the name of your PTX file,  <b><i>as long as you're in the directory containing your PTX file</i></b>.</p></article></p></section></div></main>
+<p id="p-49">If you don't move your <tt class="code-inline tex2jax_ignore">mathbook</tt> or <tt class="code-inline tex2jax_ignore">xsltproc</tt> folders or their contents on your local machine, you can always start off your compilation command with <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</tt> and simply appending the name of your PTX file,  <b><i>as long as you're in the directory containing your PTX file</i></b>.</p></article></p></section></div></main>
 </div>
 <script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
 </body>

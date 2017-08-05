@@ -64,14 +64,11 @@
 
 <p></p>
 </acknowledgement>-->
-
-
-  <preface>
-  
-<alert><p>Much of the documentation about PreTeXt (PTX) will refer to it my its previous name, MathBook XML (XML).  You can replace, in your mind, any acronyms or extensions XML (.xml) with PTX (.ptx) in your mind and in your code.</p></alert>
-</preface>
 </frontmatter>
 
+  
+
+<xi:include href="./intronotes.ptx" />
 <xi:include href="./software.ptx" />
 <xi:include href="./mathbookrepo.ptx" />
 <xi:include href="./linuxbasics.ptx" />
@@ -105,7 +102,7 @@
 <xi:include href="./gfdl-mathbook.xml" />  <!-- GFDL License text -->
  
     <colophon>
-        <p>This tutorial was authored in <url href="http://mathbook.pugetsound.edu">PreTeXt</url>.</p>
+        <p>This tutorial was authored in <url href="http://mathbook.pugetsound.edu" >PreTeXt</url>.</p>
     </colophon>
 
 
