@@ -2,7 +2,10 @@
 
 <chapter><title>Learning to navigate your file system using the command line</title>
 
-In order to compile your documents and use <c>git</c>, you will need to be able to navigate your file system using the command line in your Git Bash shell.  If you haven't used command lines before, you can find a good summary of the basic navigation commands at <xref ref="linuxbasics"/> and an A-Z Index of the Git Bash shell commands at <xref ref="linuxaz"/>.
- The essentials for you to learn are the commands <c>pwd</c> and <c>ls</c>, and how to use the command <c>cd</c> to move from one folder to another.  In particular, <c>cd ~</c> will return you to your default directory, <c>cd ..</c> will take you up one level in the file system, and entering in <c>cd im/going/here</c>, for instance, while in your default directory will take you to the directory <c>here</c> with file path <c>~/im/going/here</c>.
+<p>
+In order to compile your documents and use <c>git</c>, you will need to be able to navigate your file system using the command line in your Git Bash shell.  You can find a decent summary of the basic navigation commands at <url href="https://www.pluralsight.com/guides/other/beginner-linux-navigation-manual">Beginner: Linux Navigation Manual</url> and an index of the Git Bash shell commands at <url href="https://ss64.com/bash/">An A-Z Index of the Bash  command line for Linux</url>.</p>
+<p>
+
+ The essentials for you to learn are the commands <c>pwd</c> and <c>ls</c>, and how to use the command <c>cd</c> to move from one folder to another.  In particular, <c>cd ~</c> will return you to your default directory, <c>cd ..</c> will take you up one level in the file system, and entering in <c>cd im/going/here</c>, for instance, while in your default directory will take you to the directory <c>here</c> with file path <c>~/im/going/here</c>.</p>
 
 </chapter>

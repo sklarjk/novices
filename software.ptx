@@ -49,8 +49,11 @@ already have such an editor that you like to use, we recommend installing Sublim
 
 <p>To find what that directory is, open the Git Bash shell using the shortcut on your desktop, and enter <c>pwd</c>.  This will likely yield <c>c/users/username</c>, where <c>username</c> is the profile under which you're logged into your Windows machine. In any case, <alert>this is your default Git Bash directory</alert>. You will need to move all the files you extract, as per the video instructions, into this directory.</p>
 
+
+<p><alert>Do not move the <c>xsltproc</c> folder or its contents from their initial locations, and do not change the PATH environment variable name, despite this option described in E.2.2 in <xref ref="authorguide"/>.</alert> </p>
+
 <p><em>Why this installation?</em> <c>xsltproc</c> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed. </p> 
 
-<p><alert>Do not move the <c>xsltproc</c> folder or its contents from their initial locations.</alert> </p>
-<p><em>Installation difficulty level:</em> Moderate. Carefully follow the video instructions.</p></p></li></ol></p>
+
+<p><em>Installation difficulty level:</em> Moderate. (Potentially-difficult-to-hair-pulling if you try to change the PATH variable name.) Carefully follow the video instructions.</p></p></li></ol></p>
 </chapter>
