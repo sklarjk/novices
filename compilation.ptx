@@ -1,4 +1,5 @@
 <chapter><title>Compiling a PTX document to HTML and PDF</title>
+<subtitle>DRAFT: August 5, 2017</subtitle>
 
 <introduction>
 <p>Now it's the time for the magic to happen!   You will take a sample PTX file (extension <c>ptx</c> or <c>xml</c>) and use it to create an HTML document and a PDF. (XML is a deprecated file type; when you create PTX focuments, your extension should be <c>ptx</c>.)</p>
