@@ -23,7 +23,8 @@ Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is
 </li>
 <li><p><em>Keeping the <c>mathbook</c> repository on your local machine up to date</em></p>
 
-<p>Whenever the developers make changes to the files in the GitHub repository <c>mathbook</c>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <c>mathbook</c> folder and entering the command <c>pull git</c>.</p>
+<p>Whenever the developers make changes to the files in the GitHub repository <c>mathbook</c>, you can update these files accordingly 
+on your local machine by navigating in the Git Bash shell to the <c>mathbook</c> folder and entering the command <c>git pull</c>.</p>
 
 </li></ol></p>
 </chapter>
