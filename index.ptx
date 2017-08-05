@@ -27,7 +27,7 @@
 
 
 <article>
-<title>PreTeXt for Novices</title>
+<title>PreTeXt (PTX) for Novices Using Windows</title>
 <!--<subtitle>A Structural Approach</subtitle>-->
 
 <frontmatter>
@@ -75,30 +75,30 @@
 <section>
 <title>Installing software</title>
 
-<p>Here we provide a list of the steps you will need to take to get PreTeXt up and running on your local machine.  First, in any order:
+<p>Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  First, in any order:
 
 <ol>
 <li><p>If you don't already have one you like to use, install a text editor that will produce <q>unformatted</q> text.</p>
 <p> If you don't know what that means, or don't
-already have such an editor that you like to use, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/">https://www.sublimetext.com</url>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
+already have such an editor that you like to use, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/"/>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
 
-<p><em>Why?</em> You will write your PTX source documents using this editor. (For more information on text editors with respect to PreTeXt, see <xref ref="authorguide"/>.)</p>
+<p><em>Why?</em> You will write your PTX source documents using this editor. (For more information on text editors with respect to PTX, see <xref ref="authorguide"/>.)</p>
 <p><em>installation difficulty level:</em> Easy.</p>
 
 </li>
 
-<li><p>Install Git by choosing the appropriate option at <url href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</url>.</p>
+<li><p>Install Git by choosing the Windows option at <url href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"/>.</p>
 
 
 
-<p><em>Why?</em> From the Introduction in <xref ref="gitforauthors"/>: <q>Git <m>\ldots</m> is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.</q></p><p>For more details on why you'll be using Git (and how to use it!), see <xref ref="gitforauthors"/>. But one thing to note is that 
-<alert>if you are using Windows, you will perform all of your compilations in the Git Bash shell.</alert></p>
-<p>Request for help: What's the corresponding info for Linux/Mac users?</p>
+<p><em>Why?</em> From the Introduction in <xref ref="gitforauthors"/>: <q>Git <m>\ldots</m> is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.</q></p><p>For more details on why you'll be using Git (and how to use it!), see <xref ref="gitforauthors"/>.</p>
 
+<p>
+<alert>You will perform all of your compilations in the Git Bash shell</alert>, which is installed when you install Git.  You don't need to know what it is, exactly, other than that it is a command-line interface in which you'll enter your commands. If you've used Unix or Linux, you're in your wheelhouse in the Git Bash shell.  If you haven't, don't worry; we'll cover the basics of what you need to know.</p>
 
 <p><em>Instillation difficulty level:</em> Easy.</p></li>
 
-<li><p>Sign up for a GitHub account at <url href="https://github.com">https://github.com/</url>.</p>
+<li><p>Sign up for a GitHub account at <url href="https://github.com"/>.</p>
 
 <p><em>Why?</em> GitHub is a code hosting platform. We will later elaborate on how we will use GitHub.</p>
 <p><em>installation difficulty level:</em> Easy.</p>
@@ -106,10 +106,12 @@ already have such an editor that you like to use, we recommend installing Sublim
 
 <li><p>Install <c>xsltproc</c>.</p>
 
-<p>We highly recommend doing this installation as described in the great <em>Getting Started</em> videos at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos">http://mathbook.pugetsound.edu/documentation.html#getting-started-videos</url> created by Karl-Dieter Crisman.</p>
+<p>We highly recommend doing this installation as described in the great Windows <em>Getting Started</em> video at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos"/> created by Karl-Dieter Crisman.</p>
 
-<p><em>Why?</em> <c>xsltproc</c> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed. </p>
-<p><em>Installation difficulty level:</em> Varies.</p>
+<p><em>Why?</em> <c>xsltproc</c> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed. </p> 
+
+<p><alert>Do not move this folder or its contents.</alert> </p>
+<p><em>Installation difficulty level:</em> Straighforward if you follow the video instructions.</p>
 
 </li>
 
@@ -117,12 +119,7 @@ already have such an editor that you like to use, we recommend installing Sublim
 </p>
 </section>
 
-
-
-
 <section><title>Creating and maintaining the <c>mathbook</c> repository on your local machine</title>
-
-
 
 <introduction><p>
 Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is essentially a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't <q>need</q> (e.g., the library of examples), but some you do (e.g., the files <c>mathbook-html.xsl</c> and <c>mathbook-latex.xsl</c>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p></introduction>
@@ -146,11 +143,53 @@ Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is
 
 <subsection><title>Keeping the <c>mathbook</c> repository on your local machine up to date</title>
 <p>Whenever the developers make changes to the files in the GitHub repository <c>mathbook</c>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <c>mathbook</c> folder and entering the command <c>pull git</c>.</p>
+</subsection>
+<conclusion>
+Eventually, you will want to create your own repo: for details on that and everything else you can do with Git, see <xref ref="gitforauthors"/>.
 
-<p>Again, need help: Is there an equivalent of the Git Bash shell for Mac users? Linux?</p></subsection>
+</conclusion>
 
 </section>
 
+<section><title>Learning to navigate your file system using the command line</title>
+
+In order to compile your documents and use <c>git</c>, you will need to be able to navigate your file system using the command line in your Git Bash shell.  If you haven't used command lines before, you can find a good summary of the basic navigation commands at <xref ref="linuxbasics"/>.
+ The essentials for you to learn are the commands <c>pwd</c> and <c>ls</c>, and how to use the command <c>cd</c> to move from one folder to another.  In particular, <c>cd ~</c> will return you to your default directory, <c>cd ..</c> will take you up one level in the file system, and entering in <c>cd im/going/here</c>, for instance, while in your default directory will take you to the directory <c>here</c> with file path <c>~/im/going/here</c>.
+
+</section>
+<section><title>Compiling a PTX document to HTML and PDF</title>
+
+<introduction>
+<p>Now it's the time for the magic to happen!   You will take a sample PTX file (extension <c>ptx</c> or <c>xml</c>) and use it to create an HTML document and a PDF. (XML is a deprecated file type; when you create PTX focuments, your extension should be <c>ptx</c>.)</p>
+<p> First, navigate in your Git Bash shell to the folder containing the PTX file you plan to work with.  For our example, navigate to <c>~/mathbook/examples/hello-world</c>, which contains the PTX file <c>hello-world.xml</c>. 
+</p>
+</introduction>
+<subsection><title>Compiling to HTML</title>
+<p>
+From the folder containing the PTX file, type <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</c>. This will compile the PTX into an HTML file <c>hello-world.html</c> in the same folder as <c>hello-world.xml</c>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
+<p>
+What was all that stuff in the compilation command?? 
+<ul>
+<li><p><c>~/xsltproc/xsltproc</c> ran the <c>xsltproc</c> executable, living within the <c>xsltproc</c> folder.</p></li>
+<li><p><c>--xinclude</c> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
+<li><p><c>~/mathbook/xsl/mathbook-html.xsl</c> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
+<li><p>Finally, <c>hello-world.xml</c> is the name of the PTX file you're compiling!</p></li>
+</ul>
+</p>
+<p>
+
+<note><p>If you don't move your <c>mathbook</c> or <c>xsltproc</c> folders or their contents on your local machine, you can always start off your compilation command with <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> and simply appending the name of your PTX file,  <alert>as long as you're in the directory containing your PTX file</alert>.</p></note>
+</p>
+</subsection>
+
+<subsection><title>Compiling to PDF</title>
+<ol>
+<li><p>From the directory containing your PTX file, type in the same  command as you used to create the HTML document, replacing the <c>mathbook-html.xsl</c> with <c>mathbook-latex.xsl</c>. That is, enter <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-latex.xsl hello-world.xml</c>. This should create a LaTeX file hello-world.latex in the same <c>hello-world</c> folder.  </p></li>
+<li><p>Enter the command <c>pdflatex hello-world.latex</c> to create a PDF from the LaTeX file.  <c>hello-world.pdf</c> will appear in the <c>hello-world</c> folder.</p></li></ol>
+</subsection>
+
+
+</section>
 
 
 <!--<xi:include href="./isothms.ptx" />-->
@@ -181,12 +220,19 @@ Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is
 <title>Bibliography</title>
 <biblio type="raw" xml:id="gitforauthors">Rob A. Beezer and David Farmer, <title>Git for Authors</title>. Published under the GNU Free
 Documentation License, 2016. 
-<url href="https://mathbook.pugetsound.edu/gfa/html/">https://mathbook.pugetsound.edu/gfa/html/</url>
+<url href="https://mathbook.pugetsound.edu/gfa/html/"/>. Accessed 4 August 2017.
 </biblio>
 <biblio type="raw" xml:id="authorguide">Rob A. Beezer, <title>MathBook XML Author's Guide</title>. Published under the GNU Free
 Documentation License, 2013 (revised 2017). 
-<url href="http://mathbook.pugetsound.edu/doc/author-guide/html">http://mathbook.pugetsound.edu/doc/author-guide/mathbook-author-guide.html</url>
+<url href="http://mathbook.pugetsound.edu/doc/author-guide/html"/>. Accessed 4 August 2017.
 </biblio>
+<biblio type="raw" xml:id="windowsinstall">Karl-Dieter Crisman. <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos"/>. Accessed 4 August 2017. Video.
+</biblio>
+
+<biblio type="raw" xml:id="linuxbasics">Prakrit Duangsutha, <title>Beginner: Linux Navigation Manual</title>. <em>Lifewire.com</em>. <url href="https://www.pluralsight.com/guides/other/beginner-linux-navigation-manual"/>.Accessed 4 August 2017.
+</biblio>
+
+https://www.lifewire.com/linux-commands-for-navigating-file-system-4027320
 </references>
 <xi:include href="./gfdl-mathbook.xml" />  <!-- GFDL License text -->
  
