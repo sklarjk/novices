@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-06T12:20:27-07:00    *-->
+<!--* Generated from MathBook XML source *-->
+<!--*    on 2017-08-06T16:32:33-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -10,43 +10,44 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</title>
-<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="Keywords" content="Authored in MathBook XML">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
 MathJax.Hub.Config({
     tex2jax: {
         inlineMath: [['\\(','\\)']],
     },
     TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", },
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
         TagSide: "right",
         TagIndent: ".8em",
     },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
     "HTML-CSS": {
         scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
     },
 });
-</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
 <link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js?cc25af72af" charset="utf-8"></script>
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
-\newcommand{\lt}{&lt;}
-\newcommand{\gt}{&gt;}
-\newcommand{\amp}{&amp;}
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
 \)</div>
 <header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
 <a id="logo-link" href=""></a><div class="title-container">
@@ -54,54 +55,64 @@ MathJax.Hub.Config({
 <p class="byline">Jessica K. Sklar</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<nav id="primary-navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="chapter-2.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="chapter-4.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" onclick="window.location.href='index.html'">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a class="previous-button toolbar-item button" href="software.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="linux.html" title="Next" alt="Next">Next</a></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="chapter-2.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="chapter-4.html" title="Next" alt="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="software.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="linux.html" title="Next" alt="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
-<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
-<ul><li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li></ul>
-<h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Software Installations and  GitHub account setup</span></a></h2>
-<h2 class="link active"><a href="repos.html" data-scroll="repos"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
-<h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
-<h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html"><span class="title">Front Matter</span></a></h2>
+<ul><li><a href="colophon-1.html">Colophon</a></li></ul>
+<h2 class="link"><a href="intro.html"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
+<ul></ul>
+<h2 class="link"><a href="software.html"><span class="codenumber">2</span><span class="title">Software Installations and  GitHub account setup</span></a></h2>
+<ul></ul>
+<h2 class="link active"><a href="repos.html"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
+<ul></ul>
+<h2 class="link"><a href="linux.html"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
+<ul></ul>
+<h2 class="link"><a href="compilation.html"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
 <ul>
-<li><a href="section-1.html" data-scroll="section-1">Compiling to HTML</a></li>
-<li><a href="section-2.html" data-scroll="section-2">Compiling to PDF</a></li>
+<li><a href="section-1.html">Compiling to HTML</a></li>
+<li><a href="section-2.html">Compiling to PDF</a></li>
 </ul>
-<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<h2 class="link"><a href="backmatter-1.html"><span class="title">Back Matter</span></a></h2>
 <ul>
-<li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li>
-<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
-<li><a href="colophon-2.html" data-scroll="colophon-2">Colophon</a></li>
-</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+<li><a href="references-1.html">Bibliography</a></li>
+<li><a href="appendix-gfdl.html">GNU Free Documentation License</a></li>
+<li><a href="colophon-2.html">Colophon</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="repos"><header title="Chapter 3 Cloning and maintaining the mathbook repository on your local machine"><h1 class="heading" alt="Chapter 3 Cloning and maintaining the mathbook repository on your local machine">
 <span class="type">Chapter</span><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span><a href="repos.html" class="permalink">¶ permalink</a>
-</h1></header><p id="p-41">Don't know what this means?  That's ok!  A GitHub repository (or “repo”) is basically a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't “need” (e.g., the library of examples), but some you do (e.g., the files <tt class="code-inline tex2jax_ignore">mathbook-html.xsl</tt> and <tt class="code-inline tex2jax_ignore">mathbook-latex.xsl</tt>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p>
-<p id="p-42"></p>
+</h1></header><p id="p-41">
+Don't know what this means?  That's ok!  A GitHub repository (or “repo”) is basically a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't “need” (e.g., the library of examples), but some you do (e.g., the files <tt class="code-inline tex2jax_ignore">mathbook-html.xsl</tt> and <tt class="code-inline tex2jax_ignore">mathbook-latex.xsl</tt>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p>
+<p id="p-42">
+</p>
 <ol id="ol-3" style="list-style-type: decimal;">
 <li id="li-15">
 <p id="p-43"><!--Style me with CSS--><em>Cloning the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository</em></p>
 <p id="p-44">In your Git Bash shell, enter in the following commands, one at a time:</p>
 <p id="p-45"><table>
 <tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">git clone https://github.com/rbeezer/mathbook.git</tt></td></tr>
-<tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">cd mathbook</tt></td></tr>
-<tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">git checkout dev</tt></td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">
+<tt class="code-inline tex2jax_ignore">cd mathbook</tt>
+</td></tr>
+<tr><td class="l m b0 r0 l0 t0 lines">
+  <tt class="code-inline tex2jax_ignore">git checkout dev</tt>
+</td></tr>
 </table></p>
-<p id="p-46">This will install a folder called <tt class="code-inline tex2jax_ignore">mathbook</tt> on your local machine that contains the necessary (and optional) files.  <b><i>Do not move this folder or its contents.</i></b></p>
+<p id="p-46">This will install a folder called <tt class="code-inline tex2jax_ignore">mathbook</tt> on your local machine that contains the necessary (and optional) files.  <b><i>Do not move this folder or its contents.</i></b> </p>
 </li>
 <li id="li-16">
 <p id="p-47"><!--Style me with CSS--><em>Keeping the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine up to date</em></p>
-<p id="p-48">Whenever the developers make changes to the files in the GitHub repository <tt class="code-inline tex2jax_ignore">mathbook</tt>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <tt class="code-inline tex2jax_ignore">mathbook</tt> folder and entering the command <tt class="code-inline tex2jax_ignore">git pull</tt>.</p>
+<p id="p-48">Whenever the developers make changes to the files in the GitHub repository <tt class="code-inline tex2jax_ignore">mathbook</tt>, you can update these files accordingly 
+on your local machine by navigating in the Git Bash shell to the <tt class="code-inline tex2jax_ignore">mathbook</tt> folder and entering the command <tt class="code-inline tex2jax_ignore">git pull</tt>.</p>
 </li>
 </ol></section></div></main>
 </div>
-<script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-<chapter><title>Important introductory notes</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="intro">
+<title>Important introductory notes</title>
 
   <p>This tutorial will help novice PreTeXt (PTX) users install necessary software on their Windows machine and learn the basics of compiling PTX files into HTML and PDF forms. It will be important to keep the following in mind throughout.
   

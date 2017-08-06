@@ -1,4 +1,6 @@
-<chapter><title>Compiling a PTX document to HTML and PDF</title>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="compilation">
+
+><title>Compiling a PTX document to HTML and PDF</title>
 <subtitle>DRAFT: August 5, 2017</subtitle>
 
 <introduction>

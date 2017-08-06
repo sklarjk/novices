@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Back Matter</title>
+<title>Learning to navigate your file system using the command line</title>
 <meta name="Keywords" content="Authored in MathBook XML">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
@@ -57,11 +57,11 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" onclick="window.location.href='index.html'">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a class="previous-button toolbar-item button" href="section-2.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="references-1.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" onclick="window.location.href='index.html'">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a class="previous-button toolbar-item button" href="repos.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="compilation.html" title="Next" alt="Next">Next</a></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-2.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="references-1.html" title="Next" alt="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="repos.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="index.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="compilation.html" title="Next" alt="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
@@ -73,22 +73,26 @@ MathJax.Hub.Config({
 <ul></ul>
 <h2 class="link"><a href="repos.html"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
 <ul></ul>
-<h2 class="link"><a href="linux.html"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
+<h2 class="link active"><a href="linux.html"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
 <ul></ul>
 <h2 class="link"><a href="compilation.html"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
 <ul>
 <li><a href="section-1.html">Compiling to HTML</a></li>
 <li><a href="section-2.html">Compiling to PDF</a></li>
 </ul>
-<h2 class="link active"><a href="backmatter-1.html"><span class="title">Back Matter</span></a></h2>
+<h2 class="link"><a href="backmatter-1.html"><span class="title">Back Matter</span></a></h2>
 <ul>
 <li><a href="references-1.html">Bibliography</a></li>
 <li><a href="appendix-gfdl.html">GNU Free Documentation License</a></li>
 <li><a href="colophon-2.html">Colophon</a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in MathBook XML</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://cdn.mathjax.org/mathjax/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="backmatter" id="backmatter-1"><header title="Back Matter  Back Matter"><h1 class="heading hide-type" alt="Back Matter  Back Matter">
-<span class="type">Back Matter</span><span class="codenumber"></span><span class="title">Back Matter</span>
-</h1></header><nav class="summary-links"><a href="references-1.html"><span class="title">Bibliography</span></a><a href="appendix-gfdl.html"><span class="codenumber">A</span><span class="title">GNU Free Documentation License</span></a><a href="colophon-2.html"><span class="title">Colophon</span></a></nav></section></div></main>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="linux"><header title="Chapter 4 Learning to navigate your file system using the command line"><h1 class="heading" alt="Chapter 4 Learning to navigate your file system using the command line">
+<span class="type">Chapter</span><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span><a href="linux.html" class="permalink">¶ permalink</a>
+</h1></header><p id="p-49">
+In order to compile your documents and use <tt class="code-inline tex2jax_ignore">git</tt>, you will need to be able to navigate your file system using the command line in your Git Bash shell.  You can find a decent summary of the basic navigation commands at <a class="external-url" href="https://www.pluralsight.com/guides/other/beginner-linux-navigation-manual" target="_blank">Beginner: Linux Navigation Manual</a> and an index of the Git Bash shell commands at <a class="external-url" href="https://ss64.com/bash/" target="_blank">An A-Z Index of the Bash  command line for Linux</a>.</p>
+<p id="p-50">
+
+ The essentials for you to learn are the commands <tt class="code-inline tex2jax_ignore">pwd</tt> and <tt class="code-inline tex2jax_ignore">ls</tt>, and how to use the command <tt class="code-inline tex2jax_ignore">cd</tt> to move from one folder to another.  In particular, <tt class="code-inline tex2jax_ignore">cd ~</tt> will return you to your default directory, <tt class="code-inline tex2jax_ignore">cd ..</tt> will take you up one level in the file system, and entering in <tt class="code-inline tex2jax_ignore">cd im/going/here</tt>, for instance, while in your default directory will take you to the directory <tt class="code-inline tex2jax_ignore">here</tt> with file path <tt class="code-inline tex2jax_ignore">~/im/going/here</tt>.</p></section></div></main>
 </div>
 </body>
 </html>

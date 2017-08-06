@@ -1,6 +1,6 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="linux">
 
-
-<chapter><title>Learning to navigate your file system using the command line</title>
+<title>Learning to navigate your file system using the command line</title>
 
 <p>
 In order to compile your documents and use <c>git</c>, you will need to be able to navigate your file system using the command line in your Git Bash shell.  You can find a decent summary of the basic navigation commands at <url href="https://www.pluralsight.com/guides/other/beginner-linux-navigation-manual">Beginner: Linux Navigation Manual</url> and an index of the Git Bash shell commands at <url href="https://ss64.com/bash/">An A-Z Index of the Bash  command line for Linux</url>.</p>
