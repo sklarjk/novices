@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-05T22:52:51-07:00    *-->
+<!--*    on 2017-08-06T12:20:27-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -67,7 +67,7 @@ MathJax.Hub.Config({
 <nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
 <ul><li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li></ul>
 <h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
-<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Preparing your local machine and setting up a GitHub account</span></a></h2>
+<h2 class="link"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Software Installations and  GitHub account setup</span></a></h2>
 <h2 class="link active"><a href="repos.html" data-scroll="repos"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
 <h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
 <h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
@@ -83,22 +83,22 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="repos"><header title="Chapter 3 Cloning and maintaining the mathbook repository on your local machine"><h1 class="heading" alt="Chapter 3 Cloning and maintaining the mathbook repository on your local machine">
 <span class="type">Chapter</span><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span><a href="repos.html" class="permalink">¶ permalink</a>
-</h1></header><p id="p-36">Don't know what this means?  That's ok!  A GitHub repository (or “repo”) is basically a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't “need” (e.g., the library of examples), but some you do (e.g., the files <tt class="code-inline tex2jax_ignore">mathbook-html.xsl</tt> and <tt class="code-inline tex2jax_ignore">mathbook-latex.xsl</tt>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p>
-<p id="p-37"></p>
+</h1></header><p id="p-41">Don't know what this means?  That's ok!  A GitHub repository (or “repo”) is basically a collection of files hosted on GitHub, and what you need to know for now is that you're  essentially copying onto your local computer a GitHub repo in a way that will allow you to later easily update the files on your local machine in accordance with their updates in the corresponding GitHub repo.  Some of these files you don't “need” (e.g., the library of examples), but some you do (e.g., the files <tt class="code-inline tex2jax_ignore">mathbook-html.xsl</tt> and <tt class="code-inline tex2jax_ignore">mathbook-latex.xsl</tt>), and you will need to update these from GitHub from time to time, so you should follow these instructions exactly.</p>
+<p id="p-42"></p>
 <ol id="ol-3" style="list-style-type: decimal;">
-<li id="li-14">
-<p id="p-38"><!--Style me with CSS--><em>Cloning the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository</em></p>
-<p id="p-39">In your Git Bash shell, enter in the following commands, one at a time:</p>
-<p id="p-40"><table>
+<li id="li-15">
+<p id="p-43"><!--Style me with CSS--><em>Cloning the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository</em></p>
+<p id="p-44">In your Git Bash shell, enter in the following commands, one at a time:</p>
+<p id="p-45"><table>
 <tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">git clone https://github.com/rbeezer/mathbook.git</tt></td></tr>
 <tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">cd mathbook</tt></td></tr>
 <tr><td class="l m b0 r0 l0 t0 lines"><tt class="code-inline tex2jax_ignore">git checkout dev</tt></td></tr>
 </table></p>
-<p id="p-41">This will install a folder called <tt class="code-inline tex2jax_ignore">mathbook</tt> on your local machine that contains the necessary (and optional) files.  <b><i>Do not move this folder or its contents.</i></b></p>
+<p id="p-46">This will install a folder called <tt class="code-inline tex2jax_ignore">mathbook</tt> on your local machine that contains the necessary (and optional) files.  <b><i>Do not move this folder or its contents.</i></b></p>
 </li>
-<li id="li-15">
-<p id="p-42"><!--Style me with CSS--><em>Keeping the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine up to date</em></p>
-<p id="p-43">Whenever the developers make changes to the files in the GitHub repository <tt class="code-inline tex2jax_ignore">mathbook</tt>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <tt class="code-inline tex2jax_ignore">mathbook</tt> folder and entering the command <tt class="code-inline tex2jax_ignore">git pull</tt>.</p>
+<li id="li-16">
+<p id="p-47"><!--Style me with CSS--><em>Keeping the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine up to date</em></p>
+<p id="p-48">Whenever the developers make changes to the files in the GitHub repository <tt class="code-inline tex2jax_ignore">mathbook</tt>, you can update these files accordingly on your local machine by navigating in the Git Bash shell to the <tt class="code-inline tex2jax_ignore">mathbook</tt> folder and entering the command <tt class="code-inline tex2jax_ignore">git pull</tt>.</p>
 </li>
 </ol></section></div></main>
 </div>

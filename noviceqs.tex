@@ -1,0 +1,18 @@
+\section{Creating a PTX doc}
+Put here the instructions for creating \textit{hello-world.ptx}.
+
+\begin{itemize}
+\item
+Note that Sublime or the like should be used to create/edit PTX docs.
+\item Note that you will need to use linux commands to make sure you are calling xsltproc and pointing to the style and PTX files in the correct locations.
+\end{itemize}
+
+
+\section{Inclusion}\label{inc}
+
+If you are creating a long document, you may want to write parts of it in modular PTX files and include those in your master document. To include a file \textit{chap1.ptx} in file \textit{master.ptx}, put the command
+\texttt{$<$xi:include href="./chap1.pts" /$>$}
+in the body of \textit{master.ptx} where you want the included file's material to appear. The \textit{chap1.ptx} document should only contain exactly the content you want to have appear in \textit{master.ptx}.
+
+\section{knowls and their switches}
+Explain what knowls are and that you  hide/unhide them by modifying the code in \textit{mathbook-html.xsl}  and/or\textit{ mathbook-latex.xsl}.
