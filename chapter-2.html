@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-05T12:02:46-07:00    *-->
+<!--*    on 2017-08-05T22:52:51-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Installing software</title>
+<title>Preparing your local machine and setting up a GitHub account</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
@@ -67,7 +67,7 @@ MathJax.Hub.Config({
 <nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
 <ul><li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li></ul>
 <h2 class="link"><a href="chapter-1.html" data-scroll="chapter-1"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
-<h2 class="link active"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Installing software</span></a></h2>
+<h2 class="link active"><a href="chapter-2.html" data-scroll="chapter-2"><span class="codenumber">2</span><span class="title">Preparing your local machine and setting up a GitHub account</span></a></h2>
 <h2 class="link"><a href="repos.html" data-scroll="repos"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
 <h2 class="link"><a href="chapter-4.html" data-scroll="chapter-4"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
 <h2 class="link"><a href="chapter-5.html" data-scroll="chapter-5"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
@@ -81,43 +81,54 @@ MathJax.Hub.Config({
 <li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
 <li><a href="colophon-2.html" data-scroll="colophon-2">Colophon</a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
-</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="chapter-2"><header title="Chapter 2 Installing software"><h1 class="heading" alt="Chapter 2 Installing software">
-<span class="type">Chapter</span><span class="codenumber">2</span><span class="title">Installing software</span>
-</h1></header><p id="p-6">Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  First, in any order:</p>
-<p id="p-7"></p>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="chapter" id="chapter-2"><header title="Chapter 2 Preparing your local machine and setting up a GitHub account"><h1 class="heading" alt="Chapter 2 Preparing your local machine and setting up a GitHub account">
+<span class="type">Chapter</span><span class="codenumber">2</span><span class="title">Preparing your local machine and setting up a GitHub account</span>
+</h1></header><p id="p-6">Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  (You can find  more extensive documentation for this in  Sections E.1–E.3 in the <!--Style me with CSS--><em>Windows Installation Notes</em> in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>, though we recommend <b><i>avoiding performing the  task described in Section E.2.2</i></b>; see  <a knowl="./knowl/xslt.html" knowl-id="xref-xslt" alt="Item 4 " title="Item 4 ">Step 4</a> below.)</p>
+<p id="p-7"><b><i>You may perform the first three steps in any order, but should end by performing <a knowl="./knowl/xslt.html" knowl-id="xref-xslt" alt="Item 4 " title="Item 4 ">Step 4</a></i></b>.</p>
+<p id="p-8"></p>
 <ol id="ol-1" style="list-style-type: decimal;">
 <li id="li-5">
-<p id="p-8">Installing a text editor</p>
-<p id="p-9">If you don't already have one you like to use, install a text editor that will produce “unformatted” text.</p>
-<p id="p-10">If you don't know what that means, or don't already have such an editor that you like to use, we recommend installing Sublime Text, which you can download at <a class="external-url" href="https://www.sublimetext.com/" target="_blank"><tt class="code-inline tex2jax_ignore">https://www.sublimetext.com/</tt></a>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
-<p id="p-11"><!--Style me with CSS--><em>Why this installation?</em> You will write your PTX source documents using this editor. (For more information on text editors with respect to PTX, see <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>.)</p>
-<p id="p-12"><!--Style me with CSS--><em>Installation difficulty level:</em> Easy.</p>
+<p id="p-9">Install a text editor.</p>
+<p id="p-10">If you don't already have one installed that you like to use, you will need to install a text editor that will produce “unformatted” text.</p>
+<p id="p-11">If you don't know what that means, or don't already have such an editor that you like, we recommend installing Sublime Text, which you can download at <a class="external-url" href="https://www.sublimetext.com/" target="_blank"><tt class="code-inline tex2jax_ignore">https://www.sublimetext.com/</tt></a>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.)</p>
+<p id="p-12">For more extensive information about text editors you may use with PTX, see Appendix B in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>.</p>
+<p id="p-13"><!--Style me with CSS--><em>Why this installation?</em> You will write your PTX source documents using this editor.</p>
+<p id="p-14"><!--Style me with CSS--><em>Installation difficulty level:</em> Easy.</p>
 </li>
 <li id="li-6">
-<p id="p-13">Installing Git and creating a shortcut to the Git Bash shell</p>
-<p id="p-14"></p>
+<p id="p-15">Install Git and create a shortcut to the Git Bash shell.</p>
+<p id="p-16"></p>
 <ol id="ol-2" style="list-style-type: lower-alpha;">
 <li id="li-7">
-<p id="p-15">Install Git by choosing the Windows option at <a class="external-url" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank"><tt class="code-inline tex2jax_ignore">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</tt></a> and selecting the default options.</p>
-<p id="p-16"><!--Style me with CSS--><em>Why this installation?</em> From the Introduction in <a knowl="./knowl/gitforauthors.html" knowl-id="xref-gitforauthors" alt="Bibliographic Entry 1 Git for Authors" title="Bibliographic Entry 1 Git for Authors">[1]</a>: “Git \(\ldots\) is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.”</p>
-<p id="p-17">For more details on why you'll be using Git (and how to use it!), see <a knowl="./knowl/gitforauthors.html" knowl-id="xref-gitforauthors" alt="Bibliographic Entry 1 Git for Authors" title="Bibliographic Entry 1 Git for Authors">[1]</a>.</p>
+<p id="p-17">Install Git by choosing the Windows option at <a class="external-url" href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank"><tt class="code-inline tex2jax_ignore">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</tt></a> and selecting the default options.</p>
+<p id="p-18"><!--Style me with CSS--><em>Why this installation?</em> From the Introduction in <a knowl="./knowl/gitforauthors.html" knowl-id="xref-gitforauthors" alt="Bibliographic Entry 1 Git for Authors" title="Bibliographic Entry 1 Git for Authors">[1]</a>: “Git \(\ldots\) is a revision control system. What's that? It is a tool to record changes to software, a tool to experiment with changes to software, and a tool to collaborate creating software.”</p>
+<p id="p-19">For more details on why you'll be using Git (and how to use it!), see <a knowl="./knowl/gitforauthors.html" knowl-id="xref-gitforauthors" alt="Bibliographic Entry 1 Git for Authors" title="Bibliographic Entry 1 Git for Authors">[1]</a>.</p>
 </li>
 <li id="li-8">
-<p id="p-18">Create a shortcut to the file <tt class="code-inline tex2jax_ignore">git-bash.exe</tt>.</p>
-<p id="p-19"><!--Style me with CSS--><em>Why this shortcut creation?</em> <b><i>You will perform all of your compilations in the Git Bash shell</i></b>, which is installed when you install Git.  You don't need to know what it is, exactly, other than that it is a command-line interface in which you'll enter your commands. If you've used Unix or Linux, you're in your wheelhouse in the Git Bash shell.  If you haven't, don't worry; we'll cover the basics of what you need to know.</p>
+<p id="p-20">Create a shortcut to the file <tt class="code-inline tex2jax_ignore">git-bash.exe</tt>.</p>
+<p id="p-21"><!--Style me with CSS--><em>Why this shortcut creation?</em> <b><i>You will perform all of your compilations in the Git Bash shell</i></b>, which is installed when you install Git.  You don't need to know what it is, exactly, other than that it is a command-line interface in which you'll enter your commands. If you've used Unix or Linux, you're in your wheelhouse in the Git Bash shell.  If you haven't, don't worry; we'll cover the basics of what you need to know.</p>
 </li>
 </ol>
-<p id="p-20"></p>
-<p id="p-21"><!--Style me with CSS--><em>Instillation and shortcut creation difficulty level:</em> Easy.</p>
+<p id="p-22"></p>
+<p id="p-23"><!--Style me with CSS--><em>Installation and shortcut creation difficulty level:</em> Easy.</p>
 </li>
 <li id="li-9">
-<p id="p-22">Sign up for a GitHub account at <a class="external-url" href="https://github.com" target="_blank"><tt class="code-inline tex2jax_ignore">https://github.com</tt></a>.</p>
-<p id="p-23"><!--Style me with CSS--><em>Why sign up for this account?</em> GitHub is a code hosting platform. We will later elaborate on how we will use GitHub.</p>
-<p id="p-24"><!--Style me with CSS--><em>Sign-up  difficulty level:</em> Easy.</p>
+<p id="p-24">Sign up for a GitHub account at <a class="external-url" href="https://github.com" target="_blank"><tt class="code-inline tex2jax_ignore">https://github.com</tt></a>.</p>
+<p id="p-25"><!--Style me with CSS--><em>Why sign up for this account?</em> GitHub is a code hosting platform. We will later elaborate on how we will use GitHub.</p>
+<p id="p-26"><!--Style me with CSS--><em>Sign-up  difficulty level:</em> Easy.</p>
 </li>
-<li id="li-10">
-<p id="p-25">Install <tt class="code-inline tex2jax_ignore">xsltproc</tt>.</p>
-<p id="p-26">Follow the installation instructions for <tt class="code-inline tex2jax_ignore">xsltproc</tt> <b><i>exactly</i></b> as described in the Karl-Dieter Crisman's Windows <!--Style me with CSS--><em>Getting Started</em> video found at <a class="external-url" href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos" target="_blank"><tt class="code-inline tex2jax_ignore">http://mathbook.pugetsound.edu/documentation.html#getting-started-videos</tt></a>. <p id="p-27">The installation files are at <a class="external-url" href="https://www.zlatkovic.com/libxml.en.html" target="_blank"><tt class="code-inline tex2jax_ignore">https://www.zlatkovic.com/libxml.en.html</tt></a> and the discussion of the installation of <tt class="code-inline tex2jax_ignore">xsltproc</tt> begins in the video at 3:31. We elaborate on some of the video instructions below.</p> <p id="p-28"><b><i>It is essential that you install the <tt class="code-inline tex2jax_ignore">xsltproc</tt> files in your default Git Bash directory in order for you to avoid making adjustments to later commands.</i></b></p> <p id="p-29">To find what that directory is, open the Git Bash shell using the shortcut on your desktop, and enter <tt class="code-inline tex2jax_ignore">pwd</tt>.  This will likely yield <tt class="code-inline tex2jax_ignore">c/users/username</tt>, where <tt class="code-inline tex2jax_ignore">username</tt> is the profile under which you're logged into your Windows machine. In any case, <b><i>this is your default Git Bash directory</i></b>. You will need to move all the files you extract, as per the video instructions, into this directory.</p> <p id="p-30"><b><i>Do not move the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder or its contents from their initial locations, and do not change the PATH environment variable name, despite this option described in E.2.2 in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>.</i></b></p> <p id="p-31"><!--Style me with CSS--><em>Why this installation?</em> <tt class="code-inline tex2jax_ignore">xsltproc</tt> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed.</p> <p id="p-32"><!--Style me with CSS--><em>Installation difficulty level:</em> Moderate. (Potentially-difficult-to-hair-pulling if you try to change the PATH variable name.) Carefully follow the video instructions.</p></p>
+<li id="xslt">
+<p id="p-27">Install <tt class="code-inline tex2jax_ignore">xsltproc</tt>.</p>
+<p id="p-28">Follow the  instructions for installing <tt class="code-inline tex2jax_ignore">xsltproc</tt> <b><i>exactly</i></b> as described in the Karl-Dieter Crisman's Windows <!--Style me with CSS--><em>Getting Started</em> video found at <a class="external-url" href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos" target="_blank"><tt class="code-inline tex2jax_ignore">http://mathbook.pugetsound.edu/documentation.html#getting-started-videos</tt></a>. <p id="p-29">The installation files are at <a class="external-url" href="https://www.zlatkovic.com/libxml.en.html" target="_blank"><tt class="code-inline tex2jax_ignore">https://www.zlatkovic.com/libxml.en.html</tt></a> and the discussion of the installation of <tt class="code-inline tex2jax_ignore">xsltproc</tt> begins in the video at 3:31. We elaborate on some of the video instructions below.</p> </p>
+<ul id="ul-2" style="list-style-type: disc;">
+<li id="li-11"><p id="p-30">A description of the exact files you will need to download from the website are found in Lists E.2.1 and E.2.2 in Appendix E of <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>.</p></li>
+<li id="li-12">
+<p id="p-31"><b><i>It is essential that you install the <tt class="code-inline tex2jax_ignore">xsltproc</tt> files in your default Git Bash directory in order for you to avoid making adjustments to later commands.</i></b></p>
+<p id="p-32">To find what that directory is, open the Git Bash shell using the shortcut on your desktop, and enter <tt class="code-inline tex2jax_ignore">pwd</tt>.  This will likely yield <tt class="code-inline tex2jax_ignore">c/users/username</tt>, where <tt class="code-inline tex2jax_ignore">username</tt> is the profile under which you're logged into your Windows machine. In any case, <b><i>this is your default Git Bash directory</i></b>. You will need to move all the files you extract, as per the video instructions, into this directory.</p>
+</li>
+<li id="li-13"><p id="p-33"><b><i>Do not move the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder or its contents from their initial locations, and do not change the PATH environment variable name, despite this option being described in E.2.2 in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>.</i></b></p></li>
+</ul>
+<p> <p id="p-34"><!--Style me with CSS--><em>Why this installation?</em> <tt class="code-inline tex2jax_ignore">xsltproc</tt> is a command line tool for applying XSLT stylesheets to XML documents. You don't need to worry about what this means, but you do need to have the tool installed.</p> <p id="p-35"><!--Style me with CSS--><em>Installation difficulty level:</em> Moderate. (Potentially-difficult-to-hair-pulling if you try to change the PATH variable name.) Carefully follow the video instructions.</p></p>
 </li>
 </ol></section></div></main>
 </div>
