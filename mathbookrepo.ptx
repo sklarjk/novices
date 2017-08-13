@@ -27,6 +27,8 @@ Don't know what this means?  That's ok!  A GitHub repository (or <q>repo</q>) is
 
 <p>Whenever the developers make changes to the files in the GitHub repository <c>mathbook</c>, you can update these files accordingly 
 on your local machine by navigating in the Git Bash shell to the <c>mathbook</c> folder and entering the command <c>git pull</c>. </p><p>You should pull from this repo daily, or at least whenever you plan to compile, since it is very regularly updated.</p>
+<p>
+<alert>Important note:</alert> When you <c>git pull</c> to update your <c>mathbook</c> folder, you should be in the <c>dev</c>, not <c>master</c>, branch.If your Git Bash prompt ends in <c>mathbook (dev)</c>, you're in the correct branch.  If it ends in <c>mathbook (master)</c>, enter in <c>git checkout dev</c> to move to the correct <c>dev</c> branch before entering <c>git pull</c>.</p>
 
 </li></ol></p>
 </chapter>
