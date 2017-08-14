@@ -4,7 +4,7 @@
 
 <p>Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  (You can find  more extensive documentation for this in Sections E.1<ndash/>E.3 in Dave Rosoff's invaluable <em>Windows Installation Notes</em> in <xref ref="authorguide" />, though we recommend <alert>avoiding performing the  task described in Section E.2.2</alert>; see  <xref ref="xslt"> Step</xref> below.)</p>
 
-<p><alert>You may perform most of the installations in any order, but should perform <xref ref="xslt">Step</xref></alert> after <xref ref="git">Step</xref>.</p>
+<p><alert>You may perform most of the installations in any order, but should perform <xref ref="xslt">Step</xref> after <xref ref="git">Step</xref>.</alert></p>
 <p>
 <ol>
 <li><p>Install a text editor.</p>

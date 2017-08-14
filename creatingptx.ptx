@@ -28,7 +28,7 @@ By default, your PTX will compile to an HTML (respectively, LaTeX) file called <
 <p> From the section on <acro>RELAX-NG</acro> schema in <xref ref="authorguide"/>: <q> A <term>schema</term> is a set of patterns which describe how the elements of a language may be combined. The PreTeXt
 vocabulary is described by a <acro>RELAX-NG</acro> schema</q>.</p>
 
-<p>As you experiment, you should start getting used to the <q><acro>RELAX-NG schema.</acro></q>   If you do not follow the schema, your PTX code may not compile correctly, and even if it does compile correctly, it may not do so after an update to <c>mathbook</c>.</p>
+<p>As you experiment, you should start getting used to the <q><acro>RELAX-NG schema.</acro></q>   If you do not follow the schema, your PTX code may not compile correctly, and even if it does compile correctly, it may not do so after an update to the <c>mathbook</c> repo.</p>
 
 <p>A decription for the <acro>RELAX-NG</acro> schema can be found at <url href="http://mathbook.pugetsound.edu/doc/schema/"/>. For instance, if you select the element <c>&lt;example&gt;</c> in the left-hand column, you will see lists of elements under the headings <q><alert>Content model elements</alert></q> and <q><alert>Included in content model of elements</alert>.</q>  The former list contains the elements that the <c>&lt;example&gt;</c> element may contain, and the latter contains the elements in which the <c>&lt;example&gt;</c> element may be contained.</p>
 </section>
