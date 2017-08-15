@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2017-08-14T17:33:27-07:00    *-->
+<!--*                                    *-->
+<!--*   http://mathbook.pugetsound.edu   *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Familiarize yourself with the  <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://pythontutor.com/build/pytutor-embed.bundle.js?cc25af72af" charset="utf-8"></script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div style="display:none;">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="index.html"><span class="title">PreTeXt for Novices Using Windows</span></a></h1>
+<p class="byline">Jessica K. Sklar</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar" style=""><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-3.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="repos.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-5.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-right-toggle-button button active">Annotations</button>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-3.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="repos.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-5.html" title="Next" alt="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
+<nav id="toc"><h2 class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></h2>
+<ul><li><a href="colophon-1.html" data-scroll="colophon-1">Colophon</a></li></ul>
+<h2 class="link"><a href="intro.html" data-scroll="intro"><span class="codenumber">1</span><span class="title">Important introductory notes</span></a></h2>
+<h2 class="link"><a href="software.html" data-scroll="software"><span class="codenumber">2</span><span class="title">Software Installations and  GitHub account setup</span></a></h2>
+<h2 class="link"><a href="repos.html" data-scroll="repos"><span class="codenumber">3</span><span class="title">Cloning and maintaining the <tt class="code-inline tex2jax_ignore">mathbook</tt> repository on your local machine</span></a></h2>
+<h2 class="link"><a href="linux.html" data-scroll="linux"><span class="codenumber">4</span><span class="title">Learning to navigate your file system using the command line</span></a></h2>
+<h2 class="link"><a href="compilation.html" data-scroll="compilation"><span class="codenumber">5</span><span class="title">Compiling a PTX document to HTML and PDF</span></a></h2>
+<ul>
+<li><a href="section-1.html" data-scroll="section-1">Compiling to HTML</a></li>
+<li><a href="section-2.html" data-scroll="section-2">Compiling to PDF</a></li>
+</ul>
+<h2 class="link active"><a href="repos.html" data-scroll="repos"><span class="codenumber">6</span><span class="title">Creating your own PTX file</span></a></h2>
+<ul>
+<li><a href="section-3.html" data-scroll="section-3">First steps</a></li>
+<li><a href="section-4.html" data-scroll="section-4" class="active">Familiarize yourself with the  <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema</a></li>
+<li><a href="section-5.html" data-scroll="section-5">Coding modularly using <tt class="code-inline tex2jax_ignore">xinclude</tt></a></li>
+</ul>
+<h2 class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></h2>
+<ul>
+<li><a href="references-1.html" data-scroll="references-1">Bibliography</a></li>
+<li><a href="appendix-gfdl.html" data-scroll="appendix-gfdl">GNU Free Documentation License</a></li>
+<li><a href="colophon-2.html" data-scroll="colophon-2">Colophon</a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
+</div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-4"><header title="Section 6.2 Familiarize yourself with the  RELAX-NG schema"><h1 class="heading hide-type" alt="Section 6.2 Familiarize yourself with the  RELAX-NG schema">
+<span class="type">Section</span><span class="codenumber">6.2</span><span class="title">Familiarize yourself with the  <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema</span>
+</h1></header><p id="p-67">From the section on <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a>: “A <em class="terminology">schema</em> is a set of patterns which describe how the elements of a language may be combined. The PreTeXt vocabulary is described by a <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema”.</p>
+<p id="p-68">As you experiment, you should start getting used to the “<abbr class="acronym"><!--Style me-->RELAX-NG schema.</abbr>”   If you do not follow the schema, your PTX code may not compile correctly, and even if it does compile correctly, it may not do so after an update to the <tt class="code-inline tex2jax_ignore">mathbook</tt> repo.</p>
+<p id="p-69">A decription for the <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema can be found at <a class="external-url" href="http://mathbook.pugetsound.edu/doc/schema/" target="_blank"><tt class="code-inline tex2jax_ignore">http://mathbook.pugetsound.edu/doc/schema/</tt></a>. For instance, if you select the element <tt class="code-inline tex2jax_ignore">&lt;example&gt;</tt> in the left-hand column, you will see lists of elements under the headings “<b><i>Content model elements</i></b>” and “<b><i>Included in content model of elements</i></b>.”  The former list contains the elements that the <tt class="code-inline tex2jax_ignore">&lt;example&gt;</tt> element may contain, and the latter contains the elements in which the <tt class="code-inline tex2jax_ignore">&lt;example&gt;</tt> element may be contained.</p></section></div></main>
+</div>
+<script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
+</body>
+</html>

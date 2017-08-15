@@ -1,38 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="tbd">
 <p>TBD. Notes commented out.</p>
-
 <!--
-<title>Creating your own PTX document</title>
-
-Put here the instructions for creating a new PTX file <c>test.ptx</c>.
-Note that Sublime or the like should be used to create/edit PTX docs.
-Note that you will need to use linux commands to make sure you are calling xsltproc and pointing to the style and PTX files in the correct locations.
-
-</chapter>
-
-<chapter><title>Including modular source files</title>
-<p>
-From the subsection <em>Modular Source Files</em> of <xref ref="authorguide">: <q>For a large project, such as a book, you will likely want to split up your source into logical units, such as
-chapters and sections. <c>xsltproc</c> supports an include mechanism that makes this possible. Let us suppose
-that a section of your book on animals has a chapter on mammals with a section on monkeys. Then you
-need to do the following:
-</p>
-<ol>
-<li><p>For the file containing the <chapter> tag for the chapter on mammals, place the attribute
-<c>xmlns:xi="http://www.w3.org/2001/XInclude"</c>
-on the outermost tag in the file.</p>
-</li>
-<li>
-<p> Within the <c><chapter></c> element for the chapter on mammals, add the line <c><xi:include href="monkeys.xml"
-/></c> to <q>pull in</q> the section on monkeys at that location. The <c>@href</c> attribute can point to a file in a
-subdirectory, but will be interpreted relative to the location of the file containing the mammal chapter
-element.
-</p>
-</li>
-</ol>
-</q>
-<p>There is a third step listed in the <xref ref="authorguide">, but we are already including the command <c>--xinclude</c> when we compile our PTX files, so you're now good to go.</p>
-
 </chapter>
 <chapter><title>Knowls and their switches</title>
 <p>

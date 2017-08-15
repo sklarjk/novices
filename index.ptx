@@ -69,7 +69,7 @@
 <xi:include href="./mathbookrepo.ptx" />
 <xi:include href="./linuxbasics.ptx" />
 <xi:include href="./compilation.ptx" />
-<xi:include href="./creatingptx.ptx" />
+<!--<xi:include href="./creatingptx.ptx" />-->
 
 <!--<xi:include href="./tbd.ptx" />-->
 
@@ -78,24 +78,6 @@
 
 <backmatter>
 
-<!-- <appendix>
-        <title>Notation</title>
-
-        <p>The following table defines the notation used in this book. Page numbers or references refer to the first appearance of each symbol.</p>
-
-        <notation-list />
-    </appendix>
-
-	 <appendix>
-        <title>Solutions to Exercises</title>
-        <solution-list />
-    </appendix>
-
-    <index-part>
-
-        <index-list />
-    </index-part>
--->
 <xi:include href="./gfdl-mathbook.xml" />  <!-- GFDL License text -->
 <xi:include href="./bibliography.ptx" />
 
