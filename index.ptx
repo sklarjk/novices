@@ -69,10 +69,7 @@
 <xi:include href="./mathbookrepo.ptx" />
 <xi:include href="./linuxbasics.ptx" />
 <xi:include href="./compilation.ptx" />
-<!--<xi:include href="./creatingptx.ptx" />-->
-
-<!--<xi:include href="./tbd.ptx" />-->
-
+<xi:include href="./creatingptx.ptx" />
 
 
 
