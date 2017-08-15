@@ -96,8 +96,9 @@
         <index-list />
     </index-part>
 -->
-<xi:include href="./bibliography.ptx" />
 <xi:include href="./gfdl-mathbook.xml" />  <!-- GFDL License text -->
+<xi:include href="./bibliography.ptx" />
+
  
     <colophon>
         <p>This tutorial was authored in <url href="http://mathbook.pugetsound.edu" >PreTeXt</url>.</p>
