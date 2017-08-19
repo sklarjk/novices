@@ -1,4 +1,4 @@
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="repos">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="creation">
 
 <title>Creating your own PTX file</title>
 
@@ -40,5 +40,6 @@ do not have mammoth files open in your editor.</q> By using this mechanism you c
 
 <p>If you wish to, for instance, include the chapter in the file <c>algebra.ptx</c> in your main file, <c>index.ptx</c>, put <c>algebra.ptx</c> in the same directory as <c>index.ptx</c>, and insert the following code in <c>index.ptx</c> where you want the chapter to appear: <c>&lt;xi:include href="algebra.ptx" /&gt;</c>. You can see examples of this technique being used in <c>mathbook/examples/sample-book/sample-book.xml</c>.</p>
 
+<p>For more details, see the section on  <url href="https://mathbook.pugetsound.edu/doc/author-guide/html/processing-modular.html">Modular Source Files</url> in  <xref ref="authorguide"/>.</p>
 </section>
 </chapter>
