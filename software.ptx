@@ -63,8 +63,9 @@ already have such an editor that you like, we recommend installing Sublime Text,
 </li>
 <li xml:id="xslt"><p>Install <c>xsltproc</c>.</p>
 
-<p>Follow the  instructions for installing <c>xsltproc</c> <alert>exactly</alert> as described in the Karl-Dieter Crisman's Windows <em>Getting Started</em> video found at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos"/>.  The installation files are at <url href="https://www.zlatkovic.com/libxml.en.html"/> and the discussion of the installation of <c>xsltproc</c> begins in the video at 3:31. We elaborate on some of the video instructions below.
-
+<p>Follow the  instructions for installing <c>xsltproc</c> <alert>exactly</alert> as described in the Karl-Dieter Crisman's Windows <em>Getting Started</em> video found at <url href="http://mathbook.pugetsound.edu/documentation.html#getting-started-videos"/>.  The installation files are at <url href="https://www.zlatkovic.com/libxml.en.html"/> and the discussion of the installation of <c>xsltproc</c> begins in the video at 3:31. We elaborate on some of the video instructions below. 
+</p>
+<p>
 <ul>
 <li>
 <p>A description of the 

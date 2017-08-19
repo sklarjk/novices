@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-15T09:51:00-07:00    *-->
+<!--*    on 2017-08-19T12:21:39-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -75,7 +75,7 @@ MathJax.Hub.Config({
 <li><a href="section-1.html" data-scroll="section-1" class="active">Compiling to HTML</a></li>
 <li><a href="section-2.html" data-scroll="section-2">Compiling to PDF</a></li>
 </ul>
-<h2 class="link"><a href="repos.html" data-scroll="repos"><span class="codenumber">6</span><span class="title">Creating your own PTX file</span></a></h2>
+<h2 class="link"><a href="creation.html" data-scroll="creation"><span class="codenumber">6</span><span class="title">Creating your own PTX file</span></a></h2>
 <ul>
 <li><a href="section-3.html" data-scroll="section-3">First steps</a></li>
 <li><a href="section-4.html" data-scroll="section-4">Familiarize yourself with the  <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema</a></li>
@@ -89,18 +89,18 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-1"><header title="Section 5.1 Compiling to HTML"><h1 class="heading hide-type" alt="Section 5.1 Compiling to HTML">
 <span class="type">Section</span><span class="codenumber">5.1</span><span class="title">Compiling to HTML</span>
-</h1></header><p id="p-52">From the folder containing the PTX file, type <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</tt>. This will compile the PTX into an HTML file <tt class="code-inline tex2jax_ignore">hello-world.html</tt> in the same folder as <tt class="code-inline tex2jax_ignore">hello-world.xml</tt>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
-<p id="p-53">What was all that stuff in the compilation command?? </p>
+</h1></header><p id="p-54">From the folder containing the PTX file, type <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</tt>. This will compile the PTX into an HTML file <tt class="code-inline tex2jax_ignore">hello-world.html</tt> in the same folder as <tt class="code-inline tex2jax_ignore">hello-world.xml</tt>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
+<p id="p-55">What was all that stuff in the compilation command?? </p>
 <ul id="ul-3" style="list-style-type: disc;">
-<li id="li-17"><p id="p-54"><tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc</tt> ran the <tt class="code-inline tex2jax_ignore">xsltproc</tt> executable, living within the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder.</p></li>
-<li id="li-18"><p id="p-55"><tt class="code-inline tex2jax_ignore">--xinclude</tt> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
-<li id="li-19"><p id="p-56"><tt class="code-inline tex2jax_ignore">~/mathbook/xsl/mathbook-html.xsl</tt> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
-<li id="li-20"><p id="p-57">Finally, <tt class="code-inline tex2jax_ignore">hello-world.xml</tt> is the name of the PTX file you're compiling!</p></li>
+<li id="li-17"><p id="p-56"><tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc</tt> ran the <tt class="code-inline tex2jax_ignore">xsltproc</tt> executable, living within the <tt class="code-inline tex2jax_ignore">xsltproc</tt> folder.</p></li>
+<li id="li-18"><p id="p-57"><tt class="code-inline tex2jax_ignore">--xinclude</tt> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
+<li id="li-19"><p id="p-58"><tt class="code-inline tex2jax_ignore">~/mathbook/xsl/mathbook-html.xsl</tt> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
+<li id="li-20"><p id="p-59">Finally, <tt class="code-inline tex2jax_ignore">hello-world.xml</tt> is the name of the PTX file you're compiling!</p></li>
 </ul>
 <article class="remark-like" id="note-1"><h5 class="heading">
 <span class="type">Note</span><span class="codenumber">5.1.1</span>
 </h5>
-<p id="p-58">If you don't move your <tt class="code-inline tex2jax_ignore">mathbook</tt> or <tt class="code-inline tex2jax_ignore">xsltproc</tt> folders or their contents on your local machine, you can always start off your compilation command with <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</tt> and simply appending the name of your PTX file,  <b><i>as long as you're in the directory containing your PTX file</i></b>.</p></article></section></div></main>
+<p id="p-60">If you don't move your <tt class="code-inline tex2jax_ignore">mathbook</tt> or <tt class="code-inline tex2jax_ignore">xsltproc</tt> folders or their contents on your local machine, you can always start off your compilation command with <tt class="code-inline tex2jax_ignore">~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</tt> and simply appending the name of your PTX file,  <b><i>as long as you're in the directory containing your PTX file</i></b>.</p></article></section></div></main>
 </div>
 <script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
 </body>

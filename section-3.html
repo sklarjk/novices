@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2017-08-15T09:51:00-07:00    *-->
+<!--*    on 2017-08-19T12:21:39-07:00    *-->
 <!--*                                    *-->
 <!--*   http://mathbook.pugetsound.edu   *-->
 <!--*                                    *-->
@@ -56,11 +56,11 @@ MathJax.Hub.Config({
 </div></div>
 <nav id="primary-navbar" class="navbar" style=""><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="repos.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="repos.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-4.html" title="Next" alt="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="creation.html" title="Previous" alt="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="creation.html" title="Up" alt="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-4.html" title="Next" alt="Next">Next</a></span></div>
 <button class="sidebar-right-toggle-button button active">Annotations</button>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="repos.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="repos.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-4.html" title="Next" alt="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="creation.html" title="Previous" alt="Previous">Prev</a><a class="up-button button toolbar-item" href="creation.html" title="Up" alt="Up">Up</a><a class="next-button button toolbar-item" href="section-4.html" title="Next" alt="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <aside id="sidebar-left" class="sidebar"><div class="sidebar-content">
@@ -75,7 +75,7 @@ MathJax.Hub.Config({
 <li><a href="section-1.html" data-scroll="section-1">Compiling to HTML</a></li>
 <li><a href="section-2.html" data-scroll="section-2">Compiling to PDF</a></li>
 </ul>
-<h2 class="link active"><a href="repos.html" data-scroll="repos"><span class="codenumber">6</span><span class="title">Creating your own PTX file</span></a></h2>
+<h2 class="link active"><a href="creation.html" data-scroll="creation"><span class="codenumber">6</span><span class="title">Creating your own PTX file</span></a></h2>
 <ul>
 <li><a href="section-3.html" data-scroll="section-3" class="active">First steps</a></li>
 <li><a href="section-4.html" data-scroll="section-4">Familiarize yourself with the  <abbr class="acronym"><!--Style me-->RELAX-NG</abbr> schema</a></li>
@@ -89,11 +89,11 @@ MathJax.Hub.Config({
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://mathbook.pugetsound.edu">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" border="0" alt="Powered by MathJax"></a></nav></div>
 </div></aside><main class="main"><div id="content" class="mathbook-content"><section class="section" id="section-3"><header title="Section 6.1 First steps"><h1 class="heading hide-type" alt="Section 6.1 First steps">
 <span class="type">Section</span><span class="codenumber">6.1</span><span class="title">First steps</span>
-</h1></header><p id="p-62">Now is a good time to try creating your own PTX document. The easiest way to do this is to first follow the instructions in the  “A Careful, Quick Minimal Example,” chapter in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a> to create your first PTX document.</p>
-<p id="p-63">The next step might then be to choose a PTX (or XML) file from the <tt class="code-inline tex2jax_ignore">mathbook/examples</tt> folder and use it as a template. A good template to start with is <tt class="code-inline tex2jax_ignore">mathbook/examples/sample-article/sample-article.xml</tt>: the HTML version of the sample article, <a class="external-url" href="http://mathbook.pugetsound.edu/examples/sample-article/html/" target="_blank"><tt class="code-inline tex2jax_ignore">http://mathbook.pugetsound.edu/examples/sample-article/html/</tt></a>, provides some  instruction for writing in PTX, while the XML code itself demonstrates actual PTX coding.</p>
-<p id="p-64"><b><i>Remember that when you compile, you will always need to be sure you are including the correct path to the style file, based on your PTX file's location.</i></b></p>
-<p id="p-65"><b><i>Changing your output file names:</i></b> By default, your PTX will compile to an HTML (respectively, LaTeX) file called <tt class="code-inline tex2jax_ignore">index.html</tt> (resp., <tt class="code-inline tex2jax_ignore">index.tex</tt>). If you are writing an <tt class="code-inline tex2jax_ignore">&lt;article&gt;</tt> and you wish your output files to have,say, the title “ducks” preceding the extension, add the attribute <tt class="code-inline tex2jax_ignore">xml:id="ducks"</tt> to your <tt class="code-inline tex2jax_ignore">&lt;article&gt;</tt> element using the following code: <tt class="code-inline tex2jax_ignore">&lt;article xml:id="ducks"&gt;</tt>.</p>
-<p id="p-66">Take some time playing with whichever template(s) you choose.  Experiment with creating lists, using <tt class="code-inline tex2jax_ignore">&lt;theorem&gt;</tt> and <tt class="code-inline tex2jax_ignore">&lt;example&gt;</tt> elements, etc.  (For now you can think of “elements” in PreTeXt as playing the role which environments play in LaTeX.) <b><i>Try not to worry about the appearance of your HTML or PDF at the moment; you can customize appearances later.</i></b></p></section></div></main>
+</h1></header><p id="p-64">Now is a good time to try creating your own PTX document. The easiest way to do this is to first follow the instructions in the  “A Careful, Quick Minimal Example,” chapter in <a knowl="./knowl/authorguide.html" knowl-id="xref-authorguide" alt="Bibliographic Entry 2 MathBook XML Author's Guide" title="Bibliographic Entry 2 MathBook XML Author's Guide">[2]</a> to create your first PTX document.</p>
+<p id="p-65">The next step might then be to choose a PTX (or XML) file from the <tt class="code-inline tex2jax_ignore">mathbook/examples</tt> folder and use it as a template. A good template to start with is <tt class="code-inline tex2jax_ignore">mathbook/examples/sample-article/sample-article.xml</tt>: the HTML version of the sample article, <a class="external-url" href="http://mathbook.pugetsound.edu/examples/sample-article/html/" target="_blank"><tt class="code-inline tex2jax_ignore">http://mathbook.pugetsound.edu/examples/sample-article/html/</tt></a>, provides some  instruction for writing in PTX, while the XML code itself demonstrates actual PTX coding.</p>
+<p id="p-66"><b><i>Remember that when you compile, you will always need to be sure you are including the correct path to the style file, based on your PTX file's location.</i></b></p>
+<p id="p-67"><b><i>Changing your output file names:</i></b> By default, your PTX will compile to an HTML (respectively, LaTeX) file called <tt class="code-inline tex2jax_ignore">index.html</tt> (resp., <tt class="code-inline tex2jax_ignore">index.tex</tt>). If you are writing an <tt class="code-inline tex2jax_ignore">&lt;article&gt;</tt> and you wish your output files to have,say, the title “ducks” preceding the extension, add the attribute <tt class="code-inline tex2jax_ignore">xml:id="ducks"</tt> to your <tt class="code-inline tex2jax_ignore">&lt;article&gt;</tt> element using the following code: <tt class="code-inline tex2jax_ignore">&lt;article xml:id="ducks"&gt;</tt>.</p>
+<p id="p-68">Take some time playing with whichever template(s) you choose.  Experiment with creating lists, using <tt class="code-inline tex2jax_ignore">&lt;theorem&gt;</tt> and <tt class="code-inline tex2jax_ignore">&lt;example&gt;</tt> elements, etc.  (For now you can think of “elements” in PreTeXt as playing the role which environments play in LaTeX.) <b><i>Try not to worry about the appearance of your HTML or PDF at the moment; you can customize appearances later.</i></b></p></section></div></main>
 </div>
 <script type="text/javascript">createAllVisualizersFromHtmlAttrs();</script>
 </body>
