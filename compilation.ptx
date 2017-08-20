@@ -2,36 +2,42 @@
 
 <title>Compiling a PTX document to HTML and PDF</title>
 
-<introduction>
-<p>Now it's the time for the magic to happen!   You will take a sample PTX file (extension <c>ptx</c> or <c>xml</c>) and use it to create an HTML document and a PDF. (XML is a deprecated file type; when you create PTX focuments, your extension should be <c>ptx</c>.)</p>
-<p> First, navigate in your Git Bash shell to the folder containing the PTX file you plan to work with.  For our example, navigate to <c>~/mathbook/examples/hello-world</c>, which contains the PTX file <c>hello-world.xml</c>. 
+<p>Now is the time for the magic to happen!   You will take a sample PTX file (extension <c>ptx</c> or <c>xml</c>) and use it to create an HTML document and a PDF. (Note: XML is a deprecated file type; when you create PTX documents, your extension should be <c>ptx</c>.)</p>
+<p> First, navigate in your Git Bash shell to the folder containing the PTX or XML file you plan to work with.  For our example, navigate to <c>~/mathbook/examples/hello-world</c>, which contains the XML file <c>hello-world.xml</c>. 
 </p>
-</introduction>
-<section><title>Compiling to HTML</title>
+
+
+<p><alert>To compile to HTML:</alert> From the folder containing <c>hello-world.xml</c>, type </p><p> <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</c>.</p><p> This will compile the XML file into an HTML file, <c>hello-world.html</c>, in the same folder as <c>hello-world.xml</c>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
+
+<p><alert>To compile to PDF:</alert>
+<ol>
+<li><p>From the folder containing <c>hello-world.xml</c>, type in the same  command as you used to create the HTML document, replacing the <c>mathbook-html.xsl</c> with <c>mathbook-latex.xsl</c>; that is, enter</p> <p> <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-latex.xsl hello-world.xml</c>.</p> <p>This will compile the XML file into a LaTeX file, <c>hello-world.tex</c>, in the same folder as <c>hello-world.xml</c>.  </p></li>
+<li><p>From <alert>the same folder</alert>, enter the command <c>pdflatex hello-world.tex</c> to create a PDF from the LaTeX file.  <c>hello-world.pdf</c> will appear in the folder. You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any PDF document on your machine. </p></li></ol></p>
+
+<p>You can generalize from this to compile any PTX (XML) file to HTML or PDF.</p>
+
+<note>
+<ul><li>
+<p>To compile a file,  <alert>first make sure you are in the directory in your Git Bash shell which contains the file to be compiled</alert>.</p>
+</li>
+<li>
 <p>
-From the folder containing the PTX file, type <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl hello-world.xml</c>. This will compile the PTX into an HTML file <c>hello-world.html</c> in the same folder as <c>hello-world.xml</c>.  You can open it by navigating to the folder via the Windows desktop and opening it the way you'd open any HTML document on your machine.</p>
-<p>
-What was all that stuff in the compilation command?? 
+If your <c>xsltproc</c> and <c>mathbook</c> folders are in your default directory on your local machine, you can always start off your <c>xsltproc</c> compilation commands with </p><p><c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> (for HTML),</p><p> or</p>
+<p><c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> (for LaTeX),</p><p> and simply append the name of your PTX (XML) file.
+<alert>If you have installed or moved one or both of these directories elsewhere, you will need to change the path(s) to <c>xsltproc.exe</c> and/or to the <c>xsl</c> file in the command.</alert></p></li>
+<li><p>You can always compile your LaTeX file to PDF by typing <c>pdflatex</c> and appending the name of your LaTeX file (provided you're in the directory containing your LaTeX file).</p></li></ul></note> 
+
+
+
+<remark><p>What was all that stuff in the <c>xsltproc</c> compilation commands??
 <ul>
 <li><p><c>~/xsltproc/xsltproc</c> ran the <c>xsltproc</c> executable, living within the <c>xsltproc</c> folder.</p></li>
 <li><p><c>--xinclude</c> is an optional command that is required if you include modular PTX files in your main PTX file; don't worry about what that means for now.  Suffice to say that you can always include that optional command without running into problems, so why not include it by default?</p></li>
-<li><p><c>~/mathbook/xsl/mathbook-html.xsl</c> is the style file that makes the PTX compile into HTML, rather than into LaTeX (on the road to becoming a PDF).</p></li>
-<li><p>Finally, <c>hello-world.xml</c> is the name of the PTX file you're compiling!</p></li>
+<li><p><c>~/mathbook/xsl/mathbook-html.xsl</c> and <c>~/mathbook/xsl/mathbook-latex.xsl</c>) are the style files that make the PTX compile to HTML or LaTeX.</p></li>
+<li><p>Finally, <c>hello-world.xml</c> was, of course, the name of the file you were compiling to HTML or LaTeX!</p></li>
 </ul>
 </p>
-
-
-<note><p>If you don't move your <c>mathbook</c> or <c>xsltproc</c> folders or their contents on your local machine, you can always start off your compilation command with <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> and simply appending the name of your PTX file,  <alert>as long as you're in the directory containing your PTX file</alert>.</p></note>
-
-</section>
-
-<section><title>Compiling to PDF</title>
-
-<p>
-<ol>
-<li><p>From the directory containing your PTX file, type in the same  command as you used to create the HTML document, replacing the <c>mathbook-html.xsl</c> with <c>mathbook-latex.xsl</c>. That is, enter <c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-latex.xsl hello-world.xml</c>. This should create a LaTeX file hello-world.latex in the same <c>hello-world</c> folder.  </p></li>
-<li><p>Enter the command <c>pdflatex hello-world.latex</c> to create a PDF from the LaTeX file.  <c>hello-world.pdf</c> will appear in the <c>hello-world</c> folder.</p></li></ol></p>
-</section>
+</remark>
 
 
 </chapter>
