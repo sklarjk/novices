@@ -17,6 +17,7 @@
 <p>You can generalize from this to compile any PTX (XML) file to HTML or PDF.</p>
 
 <note>
+<p>
 <ul><li>
 <p>To compile a file,  <alert>first make sure you are in the directory in your Git Bash shell which contains the file to be compiled</alert>.</p>
 </li>
@@ -25,7 +26,7 @@
 If your <c>xsltproc</c> and <c>mathbook</c> folders are in your default directory on your local machine, you can always start off your <c>xsltproc</c> compilation commands with </p><p><c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> (for HTML),</p><p> or</p>
 <p><c>~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl</c> (for LaTeX),</p><p> and simply append the name of your PTX (XML) file.
 <alert>If you have installed or moved one or both of these directories elsewhere, you will need to change the path(s) to <c>xsltproc.exe</c> and/or to the <c>xsl</c> file in the command.</alert></p></li>
-<li><p>You can always compile your LaTeX file to PDF by typing <c>pdflatex</c> and appending the name of your LaTeX file (provided you're in the directory containing your LaTeX file).</p></li></ul></note> 
+<li><p>You can always compile your LaTeX file to PDF by typing <c>pdflatex</c> and appending the name of your LaTeX file (provided you're in the directory containing your LaTeX file).</p></li></ul></p></note> 
 
 
 
