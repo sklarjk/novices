@@ -24,7 +24,7 @@
 </docinfo>
 
 
-<book>
+<book xml:id="novices">
 <title>PreTeXt for Novices Using Windows</title>
 <!--<subtitle>A Structural Approach</subtitle>-->
 
