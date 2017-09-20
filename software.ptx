@@ -11,7 +11,7 @@
 <p>
 	If you don't already have one installed that you like to use, you will need to install a text editor that will produce <q>unformatted</q> text.</p>
 <p> If you don't know what that means, or don't
-already have such an editor that you like, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/"/>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; registration costs $70.) </p>
+already have such an editor that you like, we recommend installing Sublime Text, which you can download at <url href="https://www.sublimetext.com/"/>. (You can use the trial version for free indefinitely, but will get regular pop-ups asking you to register; as of summer 2017, registration cost <dollar />70.) </p>
 
 <p>For more extensive information about text editors you may use with PTX, see Appendix B in <xref ref="authorguide"/>.</p>
 
