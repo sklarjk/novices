@@ -18,4 +18,4 @@
 # xsltproc $XSLFLAGS -o $WEBFILES $MBX2HTML $SOURCE 2>web.error
 # cat web.error
 
-~/xsltproc/xsltproc --xinclude ../sklarjkhtml.xsl index.ptx
+~/xsltproc/xsltproc --xinclude ~/mathbook/xsl/mathbook-html.xsl index.ptx #change to xsl reference to ../sklarjkhtml.xsl if need personalized xsl file
