@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="compilation">
 
-<title>Compiling a PTX document to HTML and PDF</title>
+<title>Compiling a PTX file</title>
 
 <p>Now is the time for the magic to happen!   You will take a sample PTX file (extension <c>ptx</c> or <c>xml</c>) and use it to create an HTML document and a PDF. (Note: XML is a deprecated file type; when you create PTX documents, your extension should be <c>ptx</c>.)</p>
 <p> First, navigate in your Git Bash shell to the folder containing the PTX or XML file you plan to work with.  For our example, navigate to <c>~/mathbook/examples/hello-world</c>, which contains the XML file <c>hello-world.xml</c>. 

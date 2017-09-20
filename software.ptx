@@ -1,6 +1,6 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="software">
 
-<title>Software Installations and  GitHub account setup</title>
+<title>Software and  GitHub account setup</title>
 
 <p>Here we provide a list of the steps you will need to take to get PTX up and running on your local Windows machine.  (You can find  more extensive documentation for this in Sections E.1<ndash/>E.3 in Dave Rosoff's invaluable <em>Windows Installation Notes</em> in <xref ref="authorguide" />, though we recommend <alert>avoiding performing the  task described in Section E.2.2</alert>; see  <xref ref="xslt"> Step</xref> below.)</p>
 
